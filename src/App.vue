@@ -1,23 +1,25 @@
 <template>
-  <v-app>
-    <v-navigation-drawer app></v-navigation-drawer>
+  <v-app dark>
+    <CoreDrawer />
 
-    <v-app-bar app></v-app-bar>
+    <CoreAppBar />
 
-    <v-content>
-      <v-container fluid>
-        <router-view></router-view>
-      </v-container>
-    </v-content>
-
-    <v-footer app></v-footer>
+    <CoreView />
   </v-app>
 </template>
 
 <script>
+import CoreDrawer from "@/components/core/Drawer";
+import CoreAppBar from "@/components/core/AppBar";
+import CoreView from "@/components/core/View";
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    CoreDrawer,
+    CoreAppBar,
+    CoreView
+  },
   data: () => ({
     //
   })
