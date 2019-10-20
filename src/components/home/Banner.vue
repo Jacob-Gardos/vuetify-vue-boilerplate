@@ -1,7 +1,7 @@
 <template>
-  <v-card>
-    <h2>Home Banner</h2>
-  </v-card>
+  <base-card>
+    <h2>Hello World</h2>
+  </base-card>
 </template>
 
 <script>
